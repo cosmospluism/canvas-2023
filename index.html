@@ -8,11 +8,8 @@
     <title>Meme Maker</title>
 </head>
 <body>
-    <canvas></canvas>
-    <input id="line-width" type="range" 
-    min="1" max="10" value="5">
-    <input type="color" id="color">
     <div class="color-chip">
+        <input type="color" id="color">    
     <div 
     class="color-option" style="background-color: #FEA47F;" data-color="#FEA47F">
     </div>
@@ -41,12 +38,21 @@
     class="color-option" style="background-color: #CAD3C8;" data-color="#CAD3C8">
     </div>
     </div>
-    <div class="buttons">
+
+    <canvas></canvas>
+    
+    <div class="btns">
+    <input id="line-width" type="range" min="1" max="10" value="5">
     <button id="mode-btn">Fill</button>
     <button id="destroy-btn">destroy</button>
     <button id="eraser-btn">Erase</button>
+    <label for="file">
+        Add photo
+    <input type="file" accept="image/*" id="file">
+    </label>
+    <input type="text" placeholder="Write and then double click" id="text">
+    <button id="save">Save image</button>
     </div>
-
 
     <script src="app.js"></script>    
 </body>

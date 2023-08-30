@@ -1,26 +1,90 @@
+@import "reset.css";
+
+body {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: gainsboro;
+}
+
+canvas {
+    width: 800px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 70px;
+}
+
 body {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-canvas {
-    border: 5px solid rgb(241, 199, 121);
-    width: 800px;
-    height: 600px;
-    margin-top: 50px;
+.btns {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btns button, label {
+    border: none;
+    height: 43px;
+    font-size: 20px;
+    text-align: center;
+    width: 260px;
+    color: white;
+    background-color: rgb(147, 155, 186);
+    transition: linear .3s;
+}
+
+.btns button:hover {
+    background-color: rgb(107, 109, 116);
+}
+
+.btns #text {
+    all: unset;
+    background-color: white;
+    height: 43px;
+    font-size: 15px;
+    border: none;
+    border-radius: 15px;
+    text-indent: 35px;
+}
+
+.btns #text::placeholder {
+    font-size: 17px;
+    text-align: center;
+}
+
+.btns #file {
+    display: none;
+}
+
+.color-chip {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 70px;
 }
 
 .color-option {
     width: 50px;
     height: 50px;
+    border-radius: 25px;
     cursor: pointer;
+    transition: transform ease-in-out 0.1s;
 }
 
-#mode-btn, #destroy-btn, #eraser-btn {
-    border: 5px solid rgb(227, 140, 169);
-    background-color: pink;
-    color: white;
-    font-size: 20px;
-    padding: 10px;
+.color-option:hover {
+    transform: scale(1.2);
+}
+
+#color {
+    border: none;
+    background: none;
+    width: 40px;
+    height: 40px;
 }
