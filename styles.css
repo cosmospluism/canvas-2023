@@ -25,22 +25,34 @@ body {
 .btns {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
+}
+
+.btns img {
+    width: 100px;
+    margin-bottom: 20px;
+    margin-left: 15px;
 }
 
 .btns button, label {
-    border: none;
-    height: 43px;
-    font-size: 20px;
+    all: unset;
+    width: 200px;
+    padding: 10px 0;
+    color: rgb(62, 63, 66);
+    background-color: rgba(147, 155, 186, 0.3);
     text-align: center;
-    width: 260px;
-    color: white;
-    background-color: rgb(147, 155, 186);
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
     transition: linear .3s;
 }
 
 .btns button:hover {
-    background-color: rgb(107, 109, 116);
+    background-color: rgb(165, 174, 195);
+}
+
+.btns label {
+    cursor: pointer;
 }
 
 .btns #text {
@@ -50,18 +62,20 @@ body {
     font-size: 15px;
     border: none;
     border-radius: 15px;
-    text-indent: 35px;
+    text-align: center;
 }
 
-.btns #text::placeholder {
-    font-size: 17px;
-    text-align: center;
+.btns #text, #text::placeholder {
+    color: rgb(181, 181, 167);
 }
 
 .btns #file {
     display: none;
 }
 
+
+
+/* left-color section */
 .color-chip {
     display: flex;
     flex-direction: column;
